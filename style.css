@@ -140,6 +140,7 @@ h2.mainBody {
     padding: 7px 20px;
     border: 3px solid #a1a1a1;
     color: #a1a1a1;
+    text-decoration: none;
 }
 
 .skills li:hover {
@@ -147,7 +148,6 @@ h2.mainBody {
     border: 3px solid #ffffff;
     color: #ffffff;
     transition: color 1s;
-    transition: border 1s;
 }
 
 .mainBody:hover ~ .skills li {
@@ -165,6 +165,13 @@ h2.mainBody {
 .body-content {
     width: 20%;
     margin: auto;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: #a1a1a1;
 }
 
 @media (max-width: 768px) {
