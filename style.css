@@ -1,0 +1,141 @@
+* {
+    background-color: #19274d;
+    color: white;
+    font-family: verdana;
+}
+
+html {
+    cursor: none;
+}
+
+html, body {
+    margin: 0px;
+}
+
+.circle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(6, 53, 182);
+    cursor: none;
+    box-shadow: 0 0 0 1px rgba(4, 42, 145, 0.7);
+    background-clip: content-box;
+  }
+
+  #circleId {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+.Header {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    cursor: none;
+}
+
+.header-content:hover .nameHover {
+    color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    max-width: 40%;
+}
+
+h1.mainHeader, h5.subHeader {
+    width: 100%;
+}
+
+h1.mainHeader {
+    margin-bottom: 2.5px;
+    font-size: 4em;
+    color: #a1a1a1;
+}
+
+span.nameHover {
+    color: #a1a1a1;
+    transition: color 1s;
+}
+
+h5.subHeader {
+    margin-top: 2.5px;
+    font-size: 1.2em;
+    color: #dbdbdb;
+    margin-bottom: 5px;
+}
+
+p.subHeader {
+    width: 95%;
+    margin-top: 35px;
+}
+
+.navbar, .navbar * {
+    cursor: none !important;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    background-color: rgb(17, 31, 70);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(17, 31, 70);
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar a {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;;
+    margin: 0px;
+    display: block;
+    text-align: center;
+    background-color: rgb(17, 31, 70);
+}
+
+.navbar a:hover {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 0 10px #1a1a1a;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens (mobile-first approach) */
+    /* This is where you might adjust font sizes, spacing, etc., for mobile devices */
+    /* Since your base styles should already be mobile-friendly, you might not need much here */
+  }
+  
+  @media (min-width: 769px) {
+    /* Adjustments for tablets and above */
+    .navbar a {
+      padding: 10px 15px; /* Example adjustment: Increase padding for larger screens */
+    }
+  
+    body {
+      font-size: 18px; /* Increase base font size for readability on larger screens */
+    }
+  
+    /* Add more specific adjustments as needed */
+  }
