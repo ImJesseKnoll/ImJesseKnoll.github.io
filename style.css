@@ -74,12 +74,12 @@ h5.subHeader {
     margin-top: 2.5px;
     font-size: 1.2em;
     color: #dbdbdb;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 
 p.subHeader {
     width: 95%;
-    margin-top: 35px;
+    margin: 0 0 15px 0;
 }
 
 .navbar, .navbar * {
@@ -119,23 +119,64 @@ p.subHeader {
     box-shadow: 0 0 0 10px #1a1a1a;
 }
 
-/* Media Queries */
+h2.mainBody {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 200px;
+    color: #a1a1a1;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    gap: 20px;
+}
+
+.skills li {
+    padding: 7px 20px;
+    border: 3px solid #a1a1a1;
+    color: #a1a1a1;
+}
+
+.skills li:hover {
+    padding: 7px 20px;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    transition: color 1s;
+    transition: border 1s;
+}
+
+.mainBody:hover ~ .skills li {
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: color 1s;
+}
+
+.mainBody:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: color 0.3s;
+}
+
+.body-content {
+    width: 20%;
+    margin: auto;
+}
 
 @media (max-width: 768px) {
-    /* Adjustments for smaller screens (mobile-first approach) */
-    /* This is where you might adjust font sizes, spacing, etc., for mobile devices */
-    /* Since your base styles should already be mobile-friendly, you might not need much here */
-  }
+   
+}
   
-  @media (min-width: 769px) {
-    /* Adjustments for tablets and above */
+@media (min-width: 769px) {
     .navbar a {
-      padding: 10px 15px; /* Example adjustment: Increase padding for larger screens */
+      padding: 10px 15px;
     }
   
     body {
-      font-size: 18px; /* Increase base font size for readability on larger screens */
-    }
-  
-    /* Add more specific adjustments as needed */
-  }
+      font-size: 18px;
+    } 
+}
